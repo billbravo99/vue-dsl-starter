@@ -13,8 +13,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@unhead/vue": "^1.2.2",
     "kbfmf-libraries": "^1.0.22-beta",
-    "kbfmf-libraries-beta-2": "^1.0.25-beta",
+    "kbfmf-libraries-beta-2": "^1.0.26-beta",
     "pinia": "^2.1.4",
     "unhead": "^1.2.2",
     "vue": "^3.3.4",
