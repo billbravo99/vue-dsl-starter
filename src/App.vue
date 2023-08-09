@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { KButton } from 'kbfmf-libraries-beta-2'
-import 'kbfmf-libraries-2/dist/style.css'
+import 'kbfmf-libraries-beta-2/dist/style.css'
 
 </script>
 
