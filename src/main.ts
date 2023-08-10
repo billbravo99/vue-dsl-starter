@@ -1,7 +1,7 @@
 import './assets/main.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { KPThemesInit } from 'kbfmf-libraries-beta'
+import { createKPThemes } from 'kbfmf-libraries-beta'
 import 'kbfmf-libraries-beta/dist/style.css'
 import App from './App.vue'
 import router from './router'
@@ -13,6 +13,6 @@ const KPThemesConfig = {
 
 app.use(createPinia())
 app.use(router)
-KPThemesInit(app, KPThemesConfig)
+createKPThemes(app, KPThemesConfig)
 app.mount('#app')
 
