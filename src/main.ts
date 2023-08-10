@@ -1,19 +1,18 @@
 import './assets/main.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { setupThemesAndComponents } from 'kbfmf-libraries-beta'
+import { KPThemesInit } from 'kbfmf-libraries-beta'
 import 'kbfmf-libraries-beta/dist/style.css'
 import App from './App.vue'
 import router from './router'
 
 const app = createApp(App)
-
-app.use(createPinia())
-app.use(router)
-
-const DSLThemeConfig = {
+const KPThemesConfig = {
   ssr: false,
 }
 
-setupThemesAndComponents(app, DSLThemeConfig)
+app.use(createPinia())
+app.use(router)
+KPThemesInit(app, KPThemesConfig)
 app.mount('#app')
+
